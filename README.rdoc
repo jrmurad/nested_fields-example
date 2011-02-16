@@ -16,7 +16,7 @@ This example uses the {nestedSortable jQuery UI plugin}[http://mjsarfatti.com/sa
 
 == Relevant Code
 
-+book.rb+
++{book.rb}+
   has_one :cover
   has_many :chapters
   accepts_nested_attributes_for :chapters, :allow_destroy => true
