@@ -8,7 +8,7 @@ A book has 0 or 1 covers (+has_one+).
 
 A book has many chapters.
 
-A chapter has many pages which are ordered (+acts_as_list+) within.
+A chapter has many pages which are ordered by its +number+ column.
 
 == Positioning
 
@@ -32,7 +32,6 @@ This example uses the {nestedSortable jQuery UI plugin}[http://mjsarfatti.com/sa
 
 +page.rb+
   belongs_to :chapter
-  acts_as_list :scope => :chapter, :column => :number
 
 +layouts/application.rb+
   <script src="http://www.google.com/jsapi" type="text/javascript"></script>

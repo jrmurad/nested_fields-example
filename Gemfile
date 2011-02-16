@@ -22,7 +22,6 @@ gem 'sqlite3'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
-gem 'acts_as_list'
 gem 'nested_fields'
 
 # Bundle gems for the local environment. Make sure to
