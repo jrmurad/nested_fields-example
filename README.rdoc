@@ -2,6 +2,8 @@
 
 A demonstration of the nested_fields[https://github.com/jrmurad/nested_fields] engine.
 
+screenshot[http://i.imgur.com/uoJvo.png]
+
 == Structure
 
 A book has 0 or 1 covers (+has_one+).
@@ -16,7 +18,7 @@ This example uses the {nestedSortable jQuery UI plugin}[http://mjsarfatti.com/sa
 
 == Relevant Code
 
-+{book.rb}+
++book.rb+
   has_one :cover
   has_many :chapters
   accepts_nested_attributes_for :chapters, :allow_destroy => true
