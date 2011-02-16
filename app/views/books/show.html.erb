@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @book.title %></h1>
+
+<% if @book.cover %>
+  <p>
+    <b>Cover Color:</b>
+    <%= @book.cover.color %>
+  </p>
+<% end %>
+
+<% for chapter in @book.chapters %>
+  <h3><%= chapter.name %></h3>
+  <% for page in chapter.pages %>
+    <p>
+      <%= page.text %>
+    </p>
+  <% end %>
+<% end %>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

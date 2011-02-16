@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  chapter: 
+  text: MyString
+  number: 1
+
+two:
+  chapter: 
+  text: MyString
+  number: 1

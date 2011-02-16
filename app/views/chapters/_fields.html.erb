@@ -1,0 +1,18 @@
+<% if chapter.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(chapter.errors.count, "error") %> prohibited this chapter from being saved:</h2>
+
+    <ul>
+    <% chapter.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= nested_fields_for f, :pages, :positioned_by => :number %>
+
+<div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</div>

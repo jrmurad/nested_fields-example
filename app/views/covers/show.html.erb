@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Book:</b>
+  <%= @cover.book %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @cover.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_cover_path(@cover) %> |
+<%= link_to 'Back', covers_path %>
